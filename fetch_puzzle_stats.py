@@ -90,6 +90,7 @@ def get_puzzle_stats(date, cookie):
         'checked': int(checked),
         'revealed': int(revealed),
         'streak_eligible': int(streak_eligible),
+        'solve_date': datetime.fromtimestamp(solve_info.get('firstSolved', 0)),
     }
 
 
@@ -104,6 +105,7 @@ if __name__ == '__main__':
     date = start_date
     fields = [
         'date',
+        'solve_date',
         'day',
         'elapsed_seconds',
         'solved',
