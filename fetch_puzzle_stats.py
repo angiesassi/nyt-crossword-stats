@@ -90,7 +90,7 @@ def get_puzzle_stats(date, cookie):
         'checked': int(checked),
         'revealed': int(revealed),
         'streak_eligible': int(streak_eligible),
-        'solve_date': datetime.fromtimestamp(solve_info.get('firstSolved', 0)),
+        'solve_date': solve_date,
     }
 
 
