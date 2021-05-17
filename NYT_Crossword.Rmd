@@ -2,7 +2,8 @@
 title: "NYT Crosswords Analysis"
 author: "Angelina Sassi"
 date: "5/11/2021"
-output: html_document
+output: rmarkdown::github_document
+
 ---
 
 ```{r setup, include=FALSE}
@@ -19,8 +20,6 @@ library(gridExtra)
 library(ggfortify)
 library(gtsummary)
 ```
-
-# Angie's NYT Crosswords Analysis
 
 I've been playing the New York Times crossword consistently since July 2019, and I want to confirm my hypothesis that I'm improving over time. I downloaded my NYT Crossword data thanks to [this code developed by Matt Dodge (thanks, Matt!)](https://github.com/mattdodge/nyt-crossword-stats). In my first adventure with GitHub and Python, I added the variable `solve_date` to the CSV output using the code fork [https://github.com/angiesassi/nyt-crossword-stats](here). Props and many thanks to Ari and Ed for their Python assistance!
 
